@@ -10,6 +10,7 @@ import { WordFrequencyInfoService } from '../../services/word-frequency-info.ser
 export class WordFrequencyComponent implements OnInit {
 
   numberN;
+  inputNumber;
   frequencies: Frequency[] = [];
 
   constructor(private frequency_service: WordFrequencyInfoService) { }
@@ -22,6 +23,7 @@ export class WordFrequencyComponent implements OnInit {
     let table_div = <HTMLInputElement> document.getElementById("tableDiv");
     this.frequency_service.getTopNMostFrequentWords(this.numberN)
       .subscribe(data => {
+        this.inputNumber = this.numberN;
         this.frequencies = data;
         table_div.style.display = "block";
       });
