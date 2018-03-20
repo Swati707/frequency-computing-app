@@ -1,0 +1,29 @@
+<div style="text-align: center">
+  <h3>Number (N):</h3>
+  <div class="ui-float-label">
+    <input id="float-input" type="text" size="30" pInputText 
+    placeholder="Enter the number..." [(ngModel)]="numberN"
+    pTooltip="Enter the number N" tooltipEvent="focus" style="margin-left:.5em"
+    tooltipPosition="right" pKeyFilter="pint"> 
+  </div>
+  <div>
+    <button pButton type label="Submit" (click)="getAllFrequencies()" class="ui-button-success"></button>
+  </div>
+</div>
+<div id="tableDiv" style="text-align: center; display: none">
+  <h3 class="first">Top {{numberN}} most frequently occuring words:</h3>
+  <p-table [value]="frequencies">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Word</th>
+        <th>Frequency</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-frequencies>
+      <tr>
+        <td>{{frequencies.word}}</td>
+        <td>{{frequencies.frequency}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
