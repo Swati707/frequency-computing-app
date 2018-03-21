@@ -48,7 +48,13 @@ module.exports = {
             words = text.split(regexp);
             computeHash(words);
             frequency.sort((a, b) => {
-                return(b.frequency - a.frequency);
+                if(a.frequency < b.frequency){
+                    return 1;
+                } else if(a.frequency > b.frequency){
+                    return -1;
+                } else {
+                    return (a.word < b.word)?1:-1;
+                }
             });
             n_most_frequent_words = [];
             for(let index = 0; index<number && index<frequency.length; index++){

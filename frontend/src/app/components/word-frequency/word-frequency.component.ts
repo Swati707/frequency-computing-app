@@ -19,12 +19,11 @@ export class WordFrequencyComponent implements OnInit {
   }
 
   getAllFrequencies(){
-    this.frequencies = [];
     let table_div = <HTMLInputElement> document.getElementById("tableDiv");
     this.frequency_service.getTopNMostFrequentWords(this.numberN)
       .subscribe(data => {
-        this.inputNumber = this.numberN;
         this.frequencies = data;
+        this.inputNumber = this.numberN;
         table_div.style.display = "block";
       });
   }

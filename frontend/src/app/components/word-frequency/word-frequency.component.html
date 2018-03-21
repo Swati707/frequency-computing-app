@@ -6,24 +6,24 @@
     pTooltip="Enter the number N" tooltipEvent="focus" style="margin-left:.5em"
     tooltipPosition="right" pKeyFilter="pint"> 
   </div>
-  <div>
+  <div style="padding-bottom: 5px; padding-top: 5px">
     <button pButton type label="Submit" (click)="getAllFrequencies()" class="ui-button-success"></button>
   </div>
 </div>
-<div id="tableDiv" style="text-align: center; display: none">
-  <h3 class="first">Top {{inputNumber}} most frequently occuring words:</h3>
-  <p-table [value]="frequencies">
-    <ng-template pTemplate="header">
-      <tr>
-        <th>Word</th>
-        <th>Frequency</th>
-      </tr>
+<div id="tableDiv" style="text-align: center; display: none; padding-left: 30%; 
+padding-right: 30%; padding-top: 10px">
+  <p-dataView [value]="frequencies" styleClass="ui-grid-col-5;col-button">
+    <p-header>Top {{inputNumber}} most frequently occuring words</p-header>
+    <ng-template let-f pTemplate="listItem" style="float:center;">
+      <div class="ui-g" style="padding: 1em;border-bottom: 1px solid #d9d9d9;text-align:center;">
+        <div class="ui-g-12 ui-md-6">
+          <b class="blue">{{f.word}}</b>
+        </div>
+        <div class="ui-g-12 ui-md-6" style="text-align:center">
+          <!-- Select Product to add to the billing list -->
+          <b class="blue">{{f.frequency}}</b>
+        </div>
+      </div>
     </ng-template>
-    <ng-template pTemplate="body" let-frequencies>
-      <tr>
-        <td>{{frequencies.word}}</td>
-        <td>{{frequencies.frequency}}</td>
-      </tr>
-    </ng-template>
-  </p-table>
+  </p-dataView>
 </div>

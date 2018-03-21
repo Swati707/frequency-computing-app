@@ -1,4 +1,4 @@
 export class Frequency {
     word: String;
-    frequency: Number
+    frequency: number
 }

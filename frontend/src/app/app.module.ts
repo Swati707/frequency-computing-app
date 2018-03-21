@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
+import { DataViewModule } from 'primeng/dataview';
 import { KeyFilterModule } from 'primeng/keyfilter';
 import { TooltipModule } from 'primeng/tooltip';
 import { FormsModule } from '@angular/forms';
@@ -23,7 +23,7 @@ import { WordFrequencyInfoService } from './services/word-frequency-info.service
     HttpClientModule,
     InputTextModule,
     ButtonModule,
-    TableModule,
+    DataViewModule,
     FormsModule,
     KeyFilterModule,
     TooltipModule
