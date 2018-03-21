@@ -23,7 +23,7 @@ export class WordFrequencyComponent implements OnInit {
     this.frequency_service.getTopNMostFrequentWords(this.numberN)
       .subscribe(data => {
         this.frequencies = data;
-        this.inputNumber = this.numberN;
+        this.inputNumber = this.frequencies.length;
         table_div.style.display = "block";
       });
   }

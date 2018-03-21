@@ -15,18 +15,18 @@ app.use(bodyparser.json());
 //static files
 app.use(express.static(path.join(__dirname, 'frontend/dist')));
 
-//testing server
+//Renders the /dist/index.html file generated from 'ng build -prod' at the hompage
 app.get('/', function(req, res){
     console.log("at homepage");
     res.sendFile(path.join(__dirname,'./frontend/dist/index.html'));
 });
 
-//get request to backend sending the value of N
+//GET API to request the backend along with sending the value of N
 app.get('/:number', Controller.getTopNMostFrequentWords);
 
 //initiating the server
 const port = app.get('port') || 3000;
 
-app.listen(port, ()=>{
+app.listen(port, () => {
     console.log("server started at port: "+port);
 });

@@ -14,7 +14,7 @@ const options = {
 
 var text = "";
 var words = [];
-var regexp = /[ ,\.()\n\t0-9\?\/@\"\:\;\-_]+/;
+var regexp = /[ ,\.()<>\n\t0-9\?\/@\"\:\;\-_]+/;
 var frequency = [];
 var n_most_frequent_words = [];
 

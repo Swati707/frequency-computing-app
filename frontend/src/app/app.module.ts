@@ -24,9 +24,9 @@ import { WordFrequencyInfoService } from './services/word-frequency-info.service
     InputTextModule,
     ButtonModule,
     DataViewModule,
-    FormsModule,
     KeyFilterModule,
-    TooltipModule
+    TooltipModule,
+    FormsModule
   ],
   providers: [WordFrequencyInfoService],
   bootstrap: [AppComponent]
