@@ -86,17 +86,17 @@ Defines the service, used by the component `word-frequency`, of making an HTTP G
 
 ## Libraries and Plugins used
 
-### express
-### cors
-### body-parser
-### request-promise
-### cheerio
-### path
-### @angular
-### primeng
-### HttpClientModule from @angular/common/http
-### FormsModule from @angular/forms
-### InputTextModule, ButtonModule, DataViewModule, KeyFilterModule, TooltipModule from primeng
+- **express**
+- **cors**
+- **body-parser**
+- **request-promise**
+- **cheerio**
+- **path**
+- **@angular**
+- **primeng**
+- **HttpClientModule from @angular/common/http**
+- **FormsModule from @angular/forms**
+- **InputTextModule, ButtonModule, DataViewModule, KeyFilterModule, TooltipModule from primeng**
 
 ## Test Cases
 
