@@ -7,7 +7,7 @@
     "start": "node index",
     "build": "cd frontend && ng build --prod",
     "preinstall": "npm install -g @angular/cli",
-    "postinstall": "cd frontend && ng build --prod",
+    "postinstall": "cd frontend && npm install && ng build --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Swati Kanchan",
