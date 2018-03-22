@@ -4,11 +4,16 @@
   "description": "Its an assignment, to calculate top N most frequently occuring words in a text file, given by teribly tiny tales.",
   "main": "index.js",
   "scripts": {
+    "build": "cd frontend && ng build --prod && cd ../",
+    "start": "node index",
+    "postinstall": "cd frontend && ng build --prod && cd ../",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Swati Kanchan",
   "license": "ISC",
   "dependencies": {
+    "@angular/cli": "^1.7.3",
+    "@angular/compiler-cli": "^5.2.9",
     "body-parser": "^1.18.2",
     "cheerio": "^1.0.0-rc.2",
     "cors": "^2.8.4",

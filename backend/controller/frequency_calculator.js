@@ -60,10 +60,11 @@ module.exports = {
             for(let index = 0; index<number && index<frequency.length; index++){
                 n_most_frequent_words[index] = frequency[index];
             }
-            res.json(n_most_frequent_words);
+            res.status(200).json(n_most_frequent_words);
         })
         .catch((err) => {
             console.log(err);
+            res.status(500).json({"Error": err});
         });
     }
 }

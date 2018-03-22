@@ -25,7 +25,7 @@ app.get('/', function(req, res){
 app.get('/:number', Controller.getTopNMostFrequentWords);
 
 //initiating the server
-const port = app.get('port') || 3000;
+const port = process.env.port || app.get('port') || 3000;
 
 app.listen(port, () => {
     console.log("server started at port: "+port);
