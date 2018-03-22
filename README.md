@@ -1,6 +1,6 @@
 # [ttt-assignment-freq-app](https://ttt-swati-kanchan.herokuapp.com/)
 
-> ### This simple Client-Server application finds the top N most frequently occuring words in a text file stored at a remote URL using web scraping.
+> ### This simple Client-Server application finds the top N most frequently occuring words in a text file stored at a remote URL using web scraping. Live version of this application can be found [here](https://ttt-swati-kanchan.herokuapp.com/).
 
 ## Table of contents
 
