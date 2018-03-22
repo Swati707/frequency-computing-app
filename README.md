@@ -1,4 +1,4 @@
-# ttt-assignment-freq-app
+# [ttt-assignment-freq-app](https://ttt-swati-kanchan.herokuapp.com/)
 
 > ### This simple Client-Server application finds the top N most frequently occuring words in a text file stored at a remote URL using web scraping.
 
@@ -35,7 +35,7 @@ Clone this repository into your system.
 
 1. Navigate to ttt-assignment-freq-app in your terminal
 2. Run `node index`
-3. Go to your browser and open the link http://localhost:3000
+3. Go to your browser and open the link http://localhost:8080
 4. Try with different values of 'N'
 
 ![alt tag](https://github.com/Swati707/ttt-assignment-freq-app/blob/master/App%20Screenshots/Homepage.PNG?raw=true)
@@ -121,5 +121,7 @@ Defines the service, used by the component `word-frequency`, of making an HTTP G
 ![alt tag](https://github.com/Swati707/ttt-assignment-freq-app/blob/master/App%20Screenshots/n_is_400_start.PNG?raw=true)
 ### ...
 ![alt tag](https://github.com/Swati707/ttt-assignment-freq-app/blob/master/App%20Screenshots/n_is_400_end.PNG?raw=true)
+
+[link](https://ttt-swati-kanchan.herokuapp.com/)
 
 © [Swati Kanchan](https://github.com/Swati707)
