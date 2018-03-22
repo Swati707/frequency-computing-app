@@ -9,7 +9,8 @@ const Controller = require('./backend/controller/frequency_calculator');
 var app = express();
 
 //adding middleware
-app.use(cors());
+app.use(cors({origin: 'http://localhost:3000'}));
+app.use(bodyparser.urlencoded({extended: false}))
 app.use(bodyparser.json());
 
 //static files
@@ -25,7 +26,7 @@ app.get('/', function(req, res){
 app.get('/:number', Controller.getTopNMostFrequentWords);
 
 //initiating the server
-const port = process.env.port || app.get('port') || 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
     console.log("server started at port: "+port);
