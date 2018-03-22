@@ -6,13 +6,12 @@
   "scripts": {
     "start": "node index",
     "build": "cd frontend && ng build --prod",
+    "postinstall": "cd frontend && ng build --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Swati Kanchan",
   "license": "ISC",
   "dependencies": {
-    "@angular/cli": "^1.7.3",
-    "@angular/compiler-cli": "^5.2.9",
     "body-parser": "^1.18.2",
     "cheerio": "^1.0.0-rc.2",
     "cors": "^2.8.4",
