@@ -35,7 +35,7 @@ Clone this repository into your system.
 
 1. Navigate to ttt-assignment-freq-app in your terminal
 2. Run `node index`
-3. Go to your browser and open the link http://localhost:3000
+3. Go to your browser and open the link http://localhost:8080
 4. Try with different values of 'N'
 
 ![alt tag](https://github.com/Swati707/ttt-assignment-freq-app/blob/master/App%20Screenshots/Homepage.PNG?raw=true)
