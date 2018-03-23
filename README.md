@@ -24,7 +24,7 @@ Clone this repository into your system.
 
 1. Navigate to ttt-assignment-freq-app/frontend in your terminal
 2. Run `npm install` to install required dependencies
-3. Run `ng build -prod` to build the angular product and integrate and assemble all the components into a single `index.html` in "dist" folder
+3. Run `ng build -prod` to build the angular product and integrate and assemble all the components into a single `index.html` in "../public" folder
 
 ### Backend
 
@@ -48,10 +48,14 @@ It contains all the metadata information of the application like the packages an
 ### index.js
 1. Creates an Express server named as `app`
 2. Add middlewares `cors` and `body-parser`
-3. Add static file `\frontend\dist` to the server
-4. Creates API that renders `\frontend\dist\index.html` at the homepage http://localhost/
+3. Add static file `\public` to the server
+4. Creates API that renders `\public\index.html` at the homepage http://localhost/
 5. Creates GET API that receives 'N' as parameter and then calls appropriate backend controller function
 6. Finally initiates the server at port no. 3000 of your local machine.
+
+#### public/
+> This is generated only after building the frontend folder using `ng build -prod`
+Stores the index.html file and its dependencies which is finally rendered at homepage.
 
 ### backend/controller
 
@@ -71,9 +75,6 @@ And then top N elements of array *frequency* is stored in `n_most_frequent_words
 
 > #### This stores the angular project for Frontend of the application
 
-#### dist/
-> This is generated only after building the frontend using `ng build -prod`
-Stores the index.html file and its dependencies which is finally rendered at homepage.
 #### src/
 Stores all the source files of our angular project.
 
